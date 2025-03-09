@@ -6,8 +6,9 @@ trigger:
 - master
 
 pool:
-nam
-name: 'Devsecops-AgentPool'
+name: default
+demands:
+- Agent.Name -equals DevsecopsAgentPoolVM
 steps:
 - task: SonarQubePrepare@7
   inputs:
