@@ -6,7 +6,8 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+nam
+name: 'Devsecops-AgentPool'
 steps:
 - task: SonarQubePrepare@7
   inputs:
